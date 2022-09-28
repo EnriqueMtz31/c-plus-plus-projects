@@ -4,7 +4,6 @@
 #include <math.h>
 void main()
 {
-  // peso en kilogramos = (altura en centímetros - 100 + 10% de la edad) * 0.9
   int edad;
   float alturaCms, resultado;
   system("clear");

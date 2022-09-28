@@ -4,8 +4,6 @@
 #include <math.h>
 void main()
 {
-  // ax + b = c
-  // x = (c - b) / a
   float coeficienteA, coeficienteB, coeficienteC, resultado;
   system("clear");
 
