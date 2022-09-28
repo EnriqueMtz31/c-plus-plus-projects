@@ -21,6 +21,5 @@ void main()
   interesesElevados = pow(intereses, (numPagosEnAnio * numAniosPorPagar));
   montoDevolver = montoPrestamo * interesesElevados;
 
-  system("clear");
-  printf("El monto a devolver por el monto de prestamo %.2f es: %.2f", montoPrestamo, montoDevolver);
+  printf("El monto a devolver por el monto de prestamo %.2f es: %.2f\n", montoPrestamo, montoDevolver);
 }

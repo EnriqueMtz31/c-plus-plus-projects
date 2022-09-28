@@ -23,6 +23,5 @@ void main()
   semiperimetros = semiPerimetro * semiperimetroA * semiperimetroB * semiperimetroC;
   area = sqrt(semiperimetros);
 
-  system("clear");
-  printf("El área del triángulo con lados A: %.2f, B: %.2f, C: %.2f es igual a: %.2f", ladoA, ladoB, ladoC, area);
+  printf("El área del triángulo con lados A: %.2f, B: %.2f, C: %.2f es igual a: %.2f\n", ladoA, ladoB, ladoC, area);
 }
