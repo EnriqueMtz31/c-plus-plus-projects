@@ -5,7 +5,7 @@
 void main()
 {
   int numPagosEnAnio, numAniosPorPagar;
-  float montoDevolver, montoPrestamo, interesAnual = 0.14, intereses;
+  float montoDevolver, montoPrestamo, interesAnual = 0.14, intereses, interes, interesesElevados;
 
   system("clear");
 
@@ -16,9 +16,11 @@ void main()
   printf("Escribe la cantidad de años que se estará pagando: ");
   scanf("%d", &numAniosPorPagar);
 
-  intereses = 1 + (interesAnual / (float)numPagosEnAnio);
-  montoDevolver = montoPrestamo * pow(intereses, (numPagosEnAnio * numAniosPorPagar));
+  interes = (interesAnual / (float)numPagosEnAnio);
+  intereses = 1 + interes;
+  interesesElevados = pow(intereses, (numPagosEnAnio * numAniosPorPagar));
+  montoDevolver = montoPrestamo * interesesElevados;
 
   system("clear");
-  printf("El monto a devolver es: %.2f. Intereses %f", montoDevolver, intereses);
+  printf("El monto a devolver por el monto de prestamo %.2f es: %.2f", montoPrestamo, montoDevolver);
 }
