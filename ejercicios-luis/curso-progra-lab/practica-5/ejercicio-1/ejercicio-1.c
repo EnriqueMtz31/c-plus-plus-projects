@@ -16,5 +16,5 @@ void main()
 
   resultado = (coeficienteC - coeficienteB) / coeficienteA;
 
-  printf("X = %.2f", resultado);
+  printf("X = %.2f\n", resultado);
 }
