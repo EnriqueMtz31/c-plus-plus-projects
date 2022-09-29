@@ -15,6 +15,5 @@ void main()
 
   resultado = 0.9 * (alturaCms - 100 + (edad * 0.1));
 
-  system("clear");
-  printf("El peso en kilogramos es: %.2f", resultado);
+  printf("El peso en kilogramos es: %.2f\n", resultado);
 }
